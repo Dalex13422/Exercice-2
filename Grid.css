@@ -1,0 +1,188 @@
+
+/*--------- Body-------*/
+
+body{ 
+ background-color: #ddd;
+ margin: 20px 20px 20px 20px ; 
+}
+
+/*--partie 1--*/
+
+nav{ 
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap: 10px;
+
+}
+
+nav p{
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: rgb(245, 238, 238);
+ color: rgb(71, 70, 70,0.7);
+ padding: 3% 5%;
+ border-radius: 1px;
+ box-shadow: 1px 1px 1px 1px rgba(31, 29, 29,0.2);
+ text-align: center;
+
+}
+nav p:hover{
+ background-color: black ;
+ color: grey;
+ cursor: pointer;
+}
+
+/*--Partie 2--*/
+
+.GdeDiv2{
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 400;
+ margin-top:  20px;
+ box-shadow: 5px 8px 22px -2px rgba(31,29,29,0.2);
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap: 10px;
+ grid-template-areas: 
+    'place1 place1 place1 PtDiv2'
+    'place1 place1 place1 PtDiv3';
+}
+
+.PtDiv1{
+ background: url(Img1.Projet2.jpg) center center /cover;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 400;
+ color: white;
+ padding-top: 20%;
+ padding-left: 40px;
+ grid-area: place1;
+
+}
+
+a{
+ text-decoration: none;
+ color: white;
+ border: 1px solid rgb(31, 29, 29,0.9);
+ background-color: rgb(31, 29, 29,0.9);
+ padding: 10px;
+ display:inline-block;
+ margin-top: 20px ;
+}
+
+a:hover{
+ background-color: rgb(6, 6, 247);
+ cursor: pointer;
+}
+
+.PtDiv2{
+ grid-area: PtDiv2;
+ background-color: rgb(245, 238, 238);
+ font-weight: 300;
+ font-family: Arial, Helvetica, sans-serif;
+ padding: 30px;
+ box-shadow: 1px 1px 1px 1px rgba(51, 51, 51,0.3);
+ text-align: center;
+}
+
+
+h2{
+ font-size: 40px; 
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 400;
+
+}
+
+.PtDiv3{
+ grid-area: PtDiv3;
+ background-color: rgb(245, 238, 238);
+ font-weight: 300;
+ font-family: Arial, Helvetica, sans-serif;
+ padding: 30px;
+ box-shadow: 1px 1px 1px 1px rgba(51, 51, 51,0.3);
+ text-align: center;
+    
+}
+
+/*--Partie 3--*/
+
+.GdeDiv3{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap: 10px;
+ margin-top: 30px ;
+}
+
+section{
+ background-color:rgb(245, 238, 238); 
+ padding: 30px ;
+ text-align: center;
+ box-shadow: 1px 1px 1px 1px rgba(31,29,29,0.2);
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 400;
+}
+
+img{
+width: 100%;
+height: 100%;
+}
+/*--Partie 4--*/
+
+.GdeDiv4{
+ background-color: rgb(245, 238, 238);
+ margin-top: 30px;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ gap: 10px;
+ padding: 30px;
+ align-items: center;
+}
+
+.PtDiv4{
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 400;
+}
+
+/*--Partie 5--*/
+
+.GdeDiv5{ 
+ display: grid;
+ gap: 10px;
+ grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+ margin-top: 20px;
+}
+
+footer{
+ background-color: black;
+ margin-top: 20px;
+ 
+}
+
+footer p{
+ text-align: center;
+ color: white;
+ padding-top: 30px ;
+ padding-bottom: 30px ;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 300;
+}
+
+
+
+
+@media screen and (max-width:700px){
+    nav{
+        grid-template-columns: 1fr;
+    }  
+
+   nav p{
+       margin-top: 0;
+       margin-bottom: 0;
+   } 
+   .GdeDiv2{
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      'place1 place1'
+      'PtDiv2 PtDiv3';
+   }
+   
+}
+
